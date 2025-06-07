@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://hydraulic-flatbed.netlify.app/</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hydraulic-flatbed.netlify.app/" />
+  </url>
+  
+  <!-- قسم الخدمات -->
+  <url>
+    <loc>https://hydraulic-flatbed.netlify.app/#services</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hydraulic-flatbed.netlify.app/#services" />
+  </url>
+  
+  <!-- قسم الاتصال -->
+  <url>
+    <loc>https://hydraulic-flatbed.netlify.app/#contact</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hydraulic-flatbed.netlify.app/#contact" />
+  </url>
+  
+  <!-- PWA Manifest -->
+  <url>
+    <loc>https://hydraulic-flatbed.netlify.app/manifest.json</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+</urlset>

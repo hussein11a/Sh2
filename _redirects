@@ -1,0 +1,31 @@
+# Netlify redirects file
+
+# SPA redirect for client-side routing
+/*    /index.html   200
+
+# Security headers
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Admin redirect
+/admin/* /admin/index.html 200
+
+# API redirects (future use)
+/api/* https://api.hydraulic-flatbed.netlify.app/:splat 200
+
+# Redirect old URLs (if any)
+/home /  301
+/contact /#contact  301
+/services /#services  301
+
+# Force HTTPS
+http://hydraulic-flatbed.netlify.app/* https://hydraulic-flatbed.netlify.app/:splat 301!
+
+# Prevent access to sensitive files
+/data/* / 301
+/.env* / 301
+/config/* / 301
