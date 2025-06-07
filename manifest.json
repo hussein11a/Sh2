@@ -1,0 +1,122 @@
+{
+  "name": "سطحة هيدروليك - خدمات نقل السيارات",
+  "short_name": "سطحة هيدروليك",
+  "description": "خدمات نقل السيارات الاحترافية باستخدام أحدث تقنيات السطحة الهيدروليكية",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["business", "transportation", "automotive"],
+  "icons": [
+    {
+      "src": "assets/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "assets/screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "اتصل بنا",
+      "short_name": "اتصال",
+      "description": "الاتصال المباشر بخدمة العملاء",
+      "url": "tel:",
+      "icons": [
+        {
+          "src": "assets/shortcut-phone.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "واتساب",
+      "short_name": "واتساب",
+      "description": "التواصل عبر الواتساب",
+      "url": "https://wa.me/",
+      "icons": [
+        {
+          "src": "assets/shortcut-whatsapp.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "خدماتنا",
+      "short_name": "الخدمات",
+      "description": "عرض جميع الخدمات المتاحة",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "assets/shortcut-services.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "iarc_rating_id": "",
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}

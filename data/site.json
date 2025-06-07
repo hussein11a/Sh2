@@ -1,0 +1,47 @@
+{
+  "title": "سطحة هيدروليك",
+  "description": "خدمات نقل السيارات الاحترافية باستخدام أحدث تقنيات السطحة الهيدروليكية - نقل آمن وسريع لجميع أنواع المركبات على مدار الساعة",
+  "keywords": "سطحة هيدروليك, نقل السيارات, خدمات النقل, سطحة, نقل المركبات, نقل آمن, خدمات الطوارئ",
+  "author": "سطحة هيدروليك",
+  "phone": "",
+  "whatsapp": "",
+  "email": "",
+  "address": "",
+  "workingHours": "متاح 24 ساعة طوال أيام الأسبوع",
+  "established": "2024",
+  "language": "ar",
+  "direction": "rtl",
+  "socialMedia": {
+    "facebook": "",
+    "twitter": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  "seo": {
+    "canonical": "",
+    "robots": "index, follow",
+    "googleSiteVerification": "",
+    "bingSiteVerification": ""
+  },
+  "analytics": {
+    "googleAnalytics": "",
+    "facebookPixel": ""
+  },
+  "features": [
+    {
+      "title": "نقل آمن",
+      "description": "نضمن سلامة سيارتك أثناء النقل",
+      "icon": "fas fa-shield-alt"
+    },
+    {
+      "title": "خدمة 24/7",
+      "description": "متاحون في أي وقت لخدمتكم",
+      "icon": "fas fa-clock"
+    },
+    {
+      "title": "معدات حديثة",
+      "description": "أحدث تقنيات النقل الهيدروليكية",
+      "icon": "fas fa-tools"
+    }
+  ]
+}

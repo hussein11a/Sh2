@@ -1,0 +1,103 @@
+{
+  "companyInfo": {
+    "name": "سطحة هيدروليك",
+    "description": "خدمات نقل السيارات الاحترافية بأعلى معايير الجودة والأمان",
+    "logo": "fas fa-truck",
+    "established": "2024"
+  },
+  "contact": {
+    "phone": "",
+    "whatsapp": "",
+    "email": "",
+    "address": "",
+    "workingHours": "متاح 24 ساعة طوال أيام الأسبوع"
+  },
+  "quickLinks": [
+    {
+      "title": "الرئيسية",
+      "url": "#home",
+      "external": false
+    },
+    {
+      "title": "خدماتنا",
+      "url": "#services",
+      "external": false
+    },
+    {
+      "title": "اتصل بنا",
+      "url": "#contact",
+      "external": false
+    }
+  ],
+  "services": [
+    {
+      "title": "نقل السيارات",
+      "url": "#services"
+    },
+    {
+      "title": "خدمات الطوارئ",
+      "url": "#services"
+    },
+    {
+      "title": "نقل المعدات الثقيلة",
+      "url": "#services"
+    }
+  ],
+  "socialMedia": {
+    "facebook": {
+      "url": "",
+      "enabled": false,
+      "icon": "fab fa-facebook-f"
+    },
+    "twitter": {
+      "url": "",
+      "enabled": false,
+      "icon": "fab fa-twitter"
+    },
+    "instagram": {
+      "url": "",
+      "enabled": false,
+      "icon": "fab fa-instagram"
+    },
+    "linkedin": {
+      "url": "",
+      "enabled": false,
+      "icon": "fab fa-linkedin-in"
+    },
+    "youtube": {
+      "url": "",
+      "enabled": false,
+      "icon": "fab fa-youtube"
+    }
+  },
+  "legal": {
+    "copyright": "2024 سطحة هيدروليك. جميع الحقوق محفوظة.",
+    "privacyPolicy": {
+      "url": "",
+      "enabled": false
+    },
+    "termsOfService": {
+      "url": "",
+      "enabled": false
+    }
+  },
+  "seo": {
+    "keywords": [
+      "سطحة هيدروليك",
+      "نقل السيارات",
+      "خدمات النقل",
+      "سطحة سيارات",
+      "نقل المركبات",
+      "خدمات الطوارئ"
+    ]
+  },
+  "settings": {
+    "showLogo": true,
+    "showSocialMedia": true,
+    "showQuickLinks": true,
+    "showContact": true,
+    "layout": "grid",
+    "backgroundColor": "var(--bg-tertiary)",
+    "textColor": "var(--text-secondary)"
+  }
+}
