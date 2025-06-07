@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لوحة تحكم سطحة هيدروليك</title>
+  
+  <!-- Netlify CMS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.css" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Cairo Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom Admin Styles -->
+  <style>
+    /* تخصيص واجهة الإدارة */
+    body {
+      font-family: 'Cairo', sans-serif !important;
+      direction: rtl;
+    }
+    
+    /* تخصيص الألوان */
+    .css-1qhgeiq-AppMainContainer {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    }
+    
+    /* تخصيص الشريط الجانبي */
+    .css-18p6gc7-SidebarContainer {
+      background: #1e40af;
+      border-right: none;
+      border-left: 2px solid #1e3a8a;
+    }
+    
+    .css-18p6gc7-SidebarContainer a {
+      color: white !important;
+      font-family: 'Cairo', sans-serif;
+    }
+    
+    .css-18p6gc7-SidebarContainer a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
+    /* تخصيص العناوين */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Cairo', sans-serif !important;
+      color: #1e40af;
+    }
+    
+    /* تخصيص الأزرار */
+    button[kind="primary"] {
+      background: #1e40af !important;
+      border-color: #1e40af !important;
+    }
+    
+    button[kind="primary"]:hover {
+      background: #1e3a8a !important;
+      border-color: #1e3a8a !important;
+    }
+    
+    /* تحسين العرض للنصوص العربية */
+    .css-1s93g4r-StyledLabel {
+      text-align: right;
+      font-family: 'Cairo', sans-serif;
+    }
+    
+    .css-1ky48wb-FieldLabel {
+      text-align: right;
+      font-family: 'Cairo', sans-serif;
+    }
+    
+    /* تخصيص الحقول */
+    input, textarea, select {
+      font-family: 'Cairo', sans-serif !important;
+      direction: rtl;
+      text-align: right;
+    }
+    
+    /* تخصيص شعار الإدارة */
+    .css-1qhgeiq-AppMainContainer::before {
+      content: '';
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj48cGF0aCBmaWxsPSIjMWU0MGFmIiBkPSJNNjI0IDM1MmgtMTZ2LTY0YzAtMTcuNjctMTQuMzMtMzItMzItMzJoLTMxLjV2LTMyaDMxLjVjMzUuMzUgMCA2NCAyOC42NSA2NCA2NHY2NGgxNmMxNy42NyAwIDMyIDE0LjMzIDMyIDMyUzY0MS42NyA0MTYgNjI0IDQxNnptLTE2LTQwYzAgOC44Mi03LjE4IDE2LTE2IDE2cy0xNi03LjE4LTE2LTE2IDcuMTgtMTYgMTYtMTYgMTYgNy4xOCAxNiAxNnoiLz48L3N2Zz4=') no-repeat center;
+      background-size: contain;
+      z-index: 1000;
+    }
+    
+    /* تحسين المظهر العام */
+    .css-1qhgeiq-AppMainContainer {
+      min-height: 100vh;
+    }
+    
+    /* رسائل النجاح والخطأ */
+    .notif__container {
+      direction: rtl;
+      font-family: 'Cairo', sans-serif;
+    }
+    
+    /* تخصيص قائمة المجموعات */
+    .css-18p6gc7-SidebarContainer nav ul li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .css-18p6gc7-SidebarContainer nav ul li:last-child {
+      border-bottom: none;
+    }
+    
+    /* تحسين التنقل */
+    .css-18p6gc7-SidebarContainer nav ul li a {
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+    
+    .css-18p6gc7-SidebarContainer nav ul li a::before {
+      content: "⚙️";
+      margin-left: 10px;
+      font-size: 16px;
+    }
+    
+    /* أيقونات مخصصة للمجموعات */
+    .css-18p6gc7-SidebarContainer nav ul li a[href*="site_settings"]::before {
+      content: "🏠";
+    }
+    
+    .css-18p6gc7-SidebarContainer nav ul li a[href*="services"]::before {
+      content: "🚛";
+    }
+    
+    .css-18p6gc7-SidebarContainer nav ul li a[href*="floating_buttons"]::before {
+      content: "📞";
+    }
+    
+    .css-18p6gc7-SidebarContainer nav ul li a[href*="footer"]::before {
+      content: "🦶";
+    }
+    
+    .css-18p6gc7-SidebarContainer nav ul li a[href*="pages"]::before {
+      content: "📄";
+    }
+    
+    /* تحسين عرض المعاينة */
+    .css-1x8dvq4-PreviewPaneContainer {
+      background: white;
+      border-radius: 8px;
+      margin: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* تخصيص شريط العلوي */
+    .css-1rnw5d8-AppHeaderContainer {
+      background: white;
+      border-bottom: 2px solid #e2e8f0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* تحسين المساحة بين العناصر */
+    .css-1x8dvq4-PreviewPaneContainer,
+    .css-r6z5ec-EditorContainer {
+      margin: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* رسائل التحميل */
+    .css-1h5o9h6-LoaderContainer {
+      background: rgba(30, 64, 175, 0.1);
+      color: #1e40af;
+      font-family: 'Cairo', sans-serif;
+    }
+    
+    /* تخصيص قائمة الملفات */
+    .css-175oi2r-r {
+      direction: rtl;
+    }
+    
+    /* تحسين عرض التواريخ */
+    .css-1p5yjf8-DateWrapper {
+      direction: ltr;
+    }
+    
+    /* تخصيص الحالة */
+    .css-1i4xoxb-WorkflowStatusContainer {
+      font-family: 'Cairo', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Netlify CMS Script -->
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  
+  <!-- تخصيصات إضافية للوحة التحكم -->
+  <script>
+    // تخصيص الواجهة بعد التحميل
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('🚀 لوحة تحكم سطحة هيدروليك جاهزة');
+      
+      // إضافة عنوان مخصص
+      setTimeout(function() {
+        const title = document.querySelector('title');
+        if (title) {
+          title.textContent = 'لوحة تحكم سطحة هيدروليك';
+        }
+        
+        // إضافة رسالة ترحيب
+        const container = document.querySelector('.css-1qhgeiq-AppMainContainer');
+        if (container && !document.querySelector('.welcome-message')) {
+          const welcome = document.createElement('div');
+          welcome.className = 'welcome-message';
+          welcome.style.cssText = `
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-family: 'Cairo', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(30, 64, 175, 0.3);
+            animation: slideInLeft 1s ease;
+          `;
+          welcome.innerHTML = '🚛 مرحباً بك في لوحة تحكم سطحة هيدروليك';
+          document.body.appendChild(welcome);
+          
+          // إخفاء الرسالة بعد 5 ثواني
+          setTimeout(() => {
+            welcome.style.animation = 'slideOutLeft 1s ease';
+            setTimeout(() => {
+              if (welcome.parentNode) {
+                welcome.parentNode.removeChild(welcome);
+              }
+            }, 1000);
+          }, 5000);
+        }
+      }, 1000);
+    });
+    
+    // تكوين Netlify CMS مع التخصيصات
+    window.CMS = window.CMS || {};
+    
+    // إضافة تخصيصات للمعاينة
+    CMS.registerPreviewStyle('/css/main.css');
+    
+    // تخصيص المعاينة للخدمات
+    const ServicePreview = ({ entry, widgetFor, widgetsFor }) => {
+      const data = entry.getIn(['data']).toJS();
+      return h('div', { className: 'service-preview' },
+        h('h2', {}, data.title),
+        h('p', {}, data.description),
+        h('i', { className: data.icon })
+      );
+    };
+    
+    CMS.registerPreviewTemplate('services', ServicePreview);
+    
+    // إضافة CSS للأنيميشن
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes slideInLeft {
+        from { transform: translateX(-100px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slideOutLeft {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(-100px); opacity: 0; }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>

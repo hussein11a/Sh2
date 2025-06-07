@@ -1,0 +1,55 @@
+{
+  "phone": {
+    "number": "",
+    "display": "اتصل بنا",
+    "enabled": false,
+    "color": "#1e40af",
+    "position": "bottom-left",
+    "animation": "pulse",
+    "workingHours": {
+      "24x7": true,
+      "schedule": {
+        "monday": { "start": "00:00", "end": "23:59" },
+        "tuesday": { "start": "00:00", "end": "23:59" },
+        "wednesday": { "start": "00:00", "end": "23:59" },
+        "thursday": { "start": "00:00", "end": "23:59" },
+        "friday": { "start": "00:00", "end": "23:59" },
+        "saturday": { "start": "00:00", "end": "23:59" },
+        "sunday": { "start": "00:00", "end": "23:59" }
+      }
+    }
+  },
+  "whatsapp": {
+    "number": "",
+    "display": "واتساب",
+    "enabled": false,
+    "color": "#25d366",
+    "position": "bottom-left",
+    "animation": "pulse",
+    "defaultMessage": "مرحباً، أحتاج خدمة سطحة هيدروليك",
+    "workingHours": {
+      "24x7": true,
+      "schedule": {
+        "monday": { "start": "00:00", "end": "23:59" },
+        "tuesday": { "start": "00:00", "end": "23:59" },
+        "wednesday": { "start": "00:00", "end": "23:59" },
+        "thursday": { "start": "00:00", "end": "23:59" },
+        "friday": { "start": "00:00", "end": "23:59" },
+        "saturday": { "start": "00:00", "end": "23:59" },
+        "sunday": { "start": "00:00", "end": "23:59" }
+      }
+    }
+  },
+  "settings": {
+    "showBothButtons": true,
+    "spacing": "16px",
+    "size": "60px",
+    "responsiveSize": {
+      "mobile": "50px",
+      "tablet": "55px",
+      "desktop": "60px"
+    },
+    "hideOnScroll": false,
+    "fadeInDelay": 2000
+  }
+}

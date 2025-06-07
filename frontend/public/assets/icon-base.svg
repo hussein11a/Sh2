@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="80" fill="url(#grad1)"/>
+  <!-- شاحنة سطحة -->
+  <rect x="80" y="280" width="320" height="60" rx="8" fill="#ffffff"/>
+  <!-- مقطورة -->
+  <rect x="120" y="200" width="240" height="80" rx="8" fill="#ffffff"/>
+  <!-- كابينة السائق -->
+  <rect x="80" y="200" width="60" height="80" rx="8" fill="#ffffff"/>
+  <!-- تفاصيل -->
+  <rect x="140" y="220" width="200" height="40" rx="4" fill="#1e40af"/>
+  <!-- عجلات -->
+  <circle cx="120" cy="380" r="30" fill="#2d3748"/>
+  <circle cx="320" cy="380" r="30" fill="#2d3748"/>
+  <circle cx="360" cy="380" r="30" fill="#2d3748"/>
+  <!-- تفاصيل العجلات -->
+  <circle cx="120" cy="380" r="15" fill="#4a5568"/>
+  <circle cx="320" cy="380" r="15" fill="#4a5568"/>
+  <circle cx="360" cy="380" r="15" fill="#4a5568"/>
+  <!-- رافعة هيدروليكية -->
+  <path d="M380 240 L420 200 L430 210 L450 190 L460 200 L440 220 L430 230 L380 280 Z" fill="#ffffff"/>
+  <!-- نجمة أو علامة احترافية -->
+  <circle cx="200" cy="240" r="8" fill="#fbbf24"/>
+</svg>

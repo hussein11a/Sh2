@@ -1,0 +1,36 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://hydraulic-flatbed.netlify.app/sitemap.xml
+
+# منع الوصول للملفات الإدارية
+Disallow: /admin/
+Disallow: /data/
+Disallow: /.netlify/
+
+# منع الوصول للملفات المؤقتة
+Disallow: *.json$
+
+# السماح بالوصول للصفحات المهمة
+Allow: /
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+
+# إعدادات محددة لمحركات البحث المختلفة
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# معدل التحديث المفضل (بالثواني)
+Crawl-delay: 1
+
+# تاريخ آخر تحديث
+# Last updated: 2024-12-19
